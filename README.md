@@ -1,4 +1,4 @@
-##  Laravel Version 10
+##  Products With Multiple Category and Multiple Image
 - __Required PHP Version__ >= ^8.1
 
 #### How to use
