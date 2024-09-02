@@ -2,7 +2,7 @@
 - __Required PHP Version__ >= ^8.1
 
 #### How to use
-- Clone the repository with 
+- Clone the repository with git clone https://github.com/kamrulhsan/products-with-multi-categories.git
 - Run __composer install__
 - Copy __.env.example__ file to __.env__ and edit database credentials there
 - Run __php artisan key:generate__
