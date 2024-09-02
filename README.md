@@ -3,10 +3,10 @@
 
 #### How to use
 - Clone the repository with `git clone https://github.com/kamrulhsan/products-with-multi-categories.git`
-- Run __composer install__
-- Copy __.env.example__ file to __.env__ and edit database credentials there
-- Run __php artisan key:generate__
-- Run __php artisan migrate --seed__
+- Run `composer install`
+- Copy `.env.example` file to `.env` and edit database credentials there
+- Run `php artisan key:generate`
+- Run `php artisan migrate --seed`
 - That's it - load the page.
 
 #### login credential for admin  
