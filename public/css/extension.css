@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: transparent;
+}
+::-webkit-scrollbar {
+    width: 2px;
+}
+::-webkit-scrollbar-thumb:vertical {
+    background: #000;
+    border-radius: 5px;
+}
+.flat-icon a img {
+    width: 22px;
+    border-radius: unset !important;
+}
+button:focus {
+    outline: 0px dotted;
+}
+ul.list-inline.text-left.d-inline-block.float-left {
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+.chat-list-box ul li img {
+    border-radius: 50px;
+}
+.message-box {
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    -webkit-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.16);
+    box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.16);
+}
+.msg-box li {
+    display: inline-block;
+}
+.msg-box img {
+    border-radius: 50px;
+}
+.msg-box li span {
+    padding-left: 8px;
+    color: #545454;
+    font-weight: 550;
+}
+
+span.chat-time {
+    float: right;
+    font-size: 12px;
+}
+.head-box-1 {
+    display: flow-root;
+    padding: 4px 11px;
+    background: #007bff;
+}
+.head-box-1 ul li i {
+    color: #fff;
+    cursor: pointer;
+}
+.head-box-1 ul li span {
+    color: #fff;
+    /*position: relative;*/
+    top: -10px;
+}
+.msg_history {
+    height: 280px;
+    overflow: scroll;
+    border: 1px solid #efecec;
+}
+.popup {
+    position: fixed;
+    bottom: 65px;
+    right: 0px;
+    /*width: 370px; old width*/
+    width: 345px;
+
+}
+.mrgin {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.chatButton {
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 7px;
+    right: 0px;
+    width: 50px !important;
+    height: 50px !important;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .137);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .137);
+    padding: 0;
+    text-align: center;
+    background: #007bff;
+    border-radius: 30px;
+}
+.chatButton i {
+    font-size: 22px;
+    color: #fff;
+}
+.day-slot {
+    cursor: pointer;
+}
+.day-slot b{
+    font-size: 15px;
+}
+.day-slot-active {
+    color: #007bff;
+}
+.date_size {
+    font-size: 14px;
+}
+.form-group {
+    margin-bottom: 5px;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+.time_font {
+    font-size: 14px;
+}
+.placeholder-text {
+    font-size: 22px;
+    margin-top: 32px;
+    text-align: center;
+    color: #c7c6c6;
+}
+.form-check-label {
+    cursor: pointer;
+}
+.font-weight-500 {
+    font-weight: 500;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.chatButton img{
+    width: 30px;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+.remove{
+    color: #fff;
+    font-weight: 700;
+}
+@media only screen and (max-width: 360px) {
+
+    .popup {
+        width: 339px !important;
+        bottom: 36px;
+    }
+    .chatButton img {
+        width: 17px;
+    }
+
+    .chatButton {
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .popup {
+        width: 305px !important;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .popup {
+        width: 266px !important
+    }
+    .time_font {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-height: 413px) and (min-height: 330px){
+    .popup {
+        top: 23px !important;;
+    }
+    .msg_history {
+        height: 290px;
+    }
+    .closeBtn {
+        display: none !important;
+    }
+}
+@media only screen and (max-height: 331px)  and (min-height: 272px){
+    .popup {
+        top: 23px !important;
+    }
+    .msg_history {
+        height: 230px !important;
+    }
+    .closeBtn {
+        display: none !important;
+    }
+}
+@media only screen and (max-height: 272px) {
+    .popup {
+        top: 23px !important;
+    }
+    .msg_history {
+        height: 130px !important;
+    }
+    .closeBtn {
+        display: none !important;
+    }
+}

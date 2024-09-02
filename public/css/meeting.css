@@ -1,0 +1,145 @@
+#conference{
+    position: relative;
+    padding: 1.5rem 1.875rem;
+    width: 100%;
+    min-width: 100%;
+    max-height: 550px;
+    background-color: #fff;
+    border: 1px solid #e7eaed;
+    overflow: hidden;
+}
+#remote-participant,
+#local-participant{
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    float: left;
+    height: 500px;
+}
+
+#remote-participant{
+    width: 75%;
+    background-color: #000000;
+    background-image: linear-gradient(180deg, #000000 0%, #2c3e50 74%);
+}
+#remote-participant .remote-stream,
+#remote-participant #remote-controls{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+#remote-participant .remote-stream{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#remote-participant .remote-stream img{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    width: 175px;
+    height: auto;
+    /*filter: grayscale(100%);*/
+}
+#local-participant .local-stream video,
+#remote-participant .remote-stream video{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#remote-participant #remote-controls{
+    min-height: 50px;
+    padding: 10px;
+}
+#remote-participant #remote-controls button,
+#remote-participant #remote-controls span#identity{
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    font-size: 1.2em;
+    text-shadow: 0 0 5px #111;
+}
+#remote-participant #remote-controls button{
+    width: 35px;
+    background-color: transparent;
+    border: none;
+    margin-right: 5px;
+}
+#remote-participant #remote-controls span#identity{
+    width: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#local-participant{
+    width: 25%;
+    padding: 0px;
+    padding-left: 10px;
+}
+#local-participant .local-stream,
+#local-participant #local-controls{
+    width: 100%;
+    overflow: hidden;
+}
+#local-participant .local-stream{
+    position: relative;
+    margin-bottom: 10px;
+    height: 220px;
+    background-color: #000000;
+    background-image: linear-gradient(180deg, #000000 0%, #2c3e50 74%);
+    border-radius: 5px;
+}
+#local-participant #local-controls{
+    height: 50px;
+}
+#local-participant #local-controls button{
+    width: 31%;
+    text-align: center;
+}
+
+@media (max-width: 540px) and (orientation:portrait)  {
+    #remote-participant,
+    #local-participant{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    #remote-participant{
+        height: 225px;
+    }
+    #remote-participant #remote-controls span#identity{
+        display: block;
+        padding: 10px;
+    }
+    #local-participant{
+        height: 185px;
+    }
+}
+
+@media (max-width: 720px) and (orientation:landscape)  {
+    #remote-participant,
+    #local-participant{
+        height: 250px;
+    }
+    #local-participant .local-stream{
+        height: 70px;
+    }
+    #local-participant #local-controls button{
+        width: 30%;
+    }
+    #local-participant #local-controls button.btn{
+        padding: 0.3rem !important;
+        font-weight: normal;
+    }
+    #local-participant #local-controls button.btn i{
+        font-size: 0.8rem !important;
+    }
+}
