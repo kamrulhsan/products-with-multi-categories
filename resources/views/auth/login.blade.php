@@ -39,12 +39,12 @@
                     LOGIN
                 </button>
             </div>
-            <div class="text-right mt-2 font-weight-light">
+           {{-- <div class="text-right mt-2 font-weight-light">
                 <a href="{{ route('password.request') }}" class="auth-link text-black">Forgot password?</a>
             </div>
             <div class="text-center mt-4 font-weight-light">
                  <a href="{{ route('register') }}" class="font-weight-normal">Create New Account </a>
-            </div>
+            </div> --}}
         </form>
     </div>
 @endsection
